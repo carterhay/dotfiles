@@ -1,161 +1,3 @@
-ls
-git pull
-exit
-man 3 dup3
-man 3 dup2
-clear
-cd Documents/Spring2016/Csci4401/4401-Homework/PA1/
-ls
-make
-make
-clear
-make
-make
-make
-./mash
-make
-./mash
-ls
-clear
-ls
-cat ' test'
-cat ' test' 
-rm ' test' 
-ls
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-ls
-cat test
-rm test
-ls
-make
-./mash
-./mash
-rm test
-ls
-./mash
-chmod 644 test
-ls -la
-rm test
-make
-./mash
-make
-./mash
-cat test
-ls
-make
-make
-./mash
-ls
-cat test
-rm test
-ls
-./mash
-ls
-ls
-ls
-./mash
-ls
-cat test
-rm test
-ls
-git add -A
-git branch
-git commit -m 'have working file out for one command, no pipes yet'
-make
-make
-./mash
-make
-./mash
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-./mash
-./mash
-ls -la | grep mash | sort mash
-ls
-clear
-./mash
-ls
-rm test
-./mash
-ls
-cat test
-rm test
-ls
-make
-./mash
-make
-ls
-./mash
-make
-./mash
-make
-make
-./mash
-make
-./mash
-ls
-clear
-ls -la > test
-grep mash < test
-ls
-grep mash
-grep mash < test
-test < grep mash
-grep mash < test > test2
-ls
-cat test2
-rm test2
-ls
-grep mash | sort < test
-grep mash < test | sort
-ls -la | sort
-make
-./mash
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-grep mash < test  | sort
-./mash
-cowsay
-sudo pacman -S cowsay
-ls
-./mash
-make
-./mash
-make
-./mash
-make
-./mash
-exit
-vim .i3/config
 exit
 ls
 vim .i3/config
@@ -497,4 +339,162 @@ exit
 exit
 vim .scripts/shell_greeting.sh 
 vim .scripts/shell_greeting.sh 
+exit
+ls -la | grep .*
+ls -la
+git init
+git --help
+git remote add origin https://github.com/clccmh/dotfiles.git
+git add .*
+git add ./.*
+git status
+git add -h
+git add .
+git add */.*
+git status
+git add ./.*
+vim .gitignore
+git add .*
+ls -la
+vim .gitignore
+git add .*
+git add .
+git status
+vim .gitignore 
+git add -A
+git status
+git commit -m 'All .files'
+git push origin master
+git push origin master -f
+ls
+ls -la
+vim .gitignore 
+git add -A
+git status
+git add .scripts/
+ls
+git status
+git add .
+git status
+git commit -m 'trying to get scripts and other folders to push'
+git push origin master
+vim .gitignore 
+git status
+git add *
+git status
+git add -A
+clear
+vim .gitignore 
+git add -A
+git status
+git add .config
+exit
+ls --help
+vim .bashrc
+exit
+git status
+git add .i3
+git add .scripts
+git add .fonts
+git add .config
+git status
+cd .config/
+cd i3
+ls
+cd ..
+cd ..
+ls
+git rm .config/
+git rm .config/ -r
+ls -la
+git status
+git -r --cached .config/
+git -rm -r --cached .config/
+git rm -r --cached .config/
+git reset .config
+git status
+git add .icons
+ls -la .icons
+ls
+ls -la
+git status
+git commit -m 'added a few more folders'
+git push origin master
+ls
+vim .bashrc
+untar
+vim .bashrc
+exit
+cd Downloads/
+ls
+rm 'tor-browser-en (1).tar.gz' 
+ls
+untar tor-browser-en.tar.gz 
+ls
+cd tor-browser-en
+cd ..
+ls
+rm tor-browser-en
+rm -r tor-browser-en
+ls
+cd
+clear
+vim .bashrc
+exit
+alsamixer
+exit
+vim .Xresources 
+xset -b
+vim .Xresources 
+vim .xprofile
+exit
+cd Downloads/
+unzip tor-browser-en.tar.gz 
+ls
+vim ~/.bashrc
+exit
+cd Downloads/
+ls
+uncompress tor-browser-en.tar.gz 
+ls
+ls
+vim ~/.bashrc
+extract tor-browser-en.tar 
+ls
+ls -la
+vim ~/.bashrc
+exit
+cd Downloads/
+extract tor-browser-en.tar 
+ls
+rm tor-browser-en
+rm -r tor-browser-en
+ls
+cd
+ls
+vim .bashrc
+ls
+echo $PATH
+export -h
+export --help
+vim .bashrc
+exit
+cd Downloads/
+extract tor-browser-en.tar 
+cd ..
+ls
+cd .scripts/
+chmod +x extract.sh 
+extract greeting.txt 
+ls
+mv extract.sh extract
+ls
+cd ..
+ls
+cd Downloads/
+ls
+extract tor-browser-en.tar 
+ls
+rm tor-browser-en -r
+ls
 exit

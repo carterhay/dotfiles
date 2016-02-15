@@ -18,8 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:q
 :w
+:q
+:split ~/.scripts/extract.sh
 :vsplit
 :q!
 :wm
@@ -49,58 +50,73 @@ $
 "0	LINE	0
 	bindsym Mod1+m move workspace to output left
 ""1	LINE	0
-	echo 
+	
 "2	LINE	0
 	
 "3	LINE	0
-	alias cd = '
+	#Path
+	PATH=$PATH:~/.scripts
 "4	LINE	0
 	
 "5	LINE	0
-	alias ls='ls --color=auto'
+	}
 "6	LINE	0
-	[[ $- != *i* ]] && return
+	
 "7	LINE	0
-	# If not running interactively, do not do anything
-"8	LINE	0
-	      if (pid == 0) {*/
+	nction extract {
+"8	CHAR	0
+	  if [ -f $1 ]; then
+	    case $1 in
+	      *.tar)
+	        tar xvf "$1";;
+	      *.zip)
+	        unzip "$1";;
+	      *)
+	        echo "'$1' is not supported by extract"
+	    esac
+	  else
+	    echo "'$1' is not a file"
+	  fi
 "9	LINE	0
-	      waitpid(pid, &returnStatus, 0);*/
+	alias cd='cd 
 "c@	CHAR	0
 	i"A"jbIwww
 "j	CHAR	0
 	jjjjj
 "-	CHAR	0
-	s
+	u
 
 # File marks:
-'0  4  3  ~/.gitignore
-'1  3  2  ~/.gitignore
-'2  1  2  ~/.gitignore
-'3  5  10  ~/.scripts/shell_greeting.sh
-'4  9  0  ~/.bashrc
-'5  28  11  ~/.bashrc
-'6  18  11  ~/.bashrc
-'7  10  0  ~/.bashrc
-'8  4  14  ~/.scripts/shell_greeting.sh
-'9  3  0  ~/.scripts/shell_greeting.sh
+'0  1  0  ~/.bashrc
+'1  19  0  ~/.bashrc
+'2  3  0  ~/.scripts/extract.sh
+'3  35  11  ~/.bashrc
+'4  15  0  ~/.bashrc
+'5  35  12  ~/.bashrc
+'6  35  19  ~/.bashrc
+'7  23  21  ~/.bashrc
+'8  17  0  ~/.bashrc
+'9  5  14  ~/.scripts/shell_greeting.sh
 
 # Jumplist (newest first):
--'  4  3  ~/.gitignore
--'  1  0  ~/.gitignore
--'  3  2  ~/.gitignore
--'  5  10  ~/.scripts/shell_greeting.sh
+-'  1  0  ~/.bashrc
+-'  19  0  ~/.bashrc
+-'  3  0  ~/.scripts/extract.sh
+-'  35  0  ~/.bashrc
+-'  15  0  ~/.bashrc
+-'  23  21  ~/.bashrc
+-'  17  0  ~/.bashrc
+-'  5  14  ~/.scripts/shell_greeting.sh
 -'  1  0  ~/.scripts/shell_greeting.sh
 -'  9  0  ~/.bashrc
--'  1  0  ~/.bashrc
--'  28  11  ~/.bashrc
--'  18  11  ~/.bashrc
--'  10  0  ~/.bashrc
+-'  31  11  ~/.bashrc
+-'  20  11  ~/.bashrc
+-'  13  0  ~/.bashrc
 -'  4  14  ~/.scripts/shell_greeting.sh
 -'  3  0  ~/.scripts/shell_greeting.sh
 -'  4  0  ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
 -'  1  0  ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
--'  15  24  ~/.bashrc
+-'  18  24  ~/.bashrc
 -'  195  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  1  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  2  38  ~/Documents/Spring2016/Csci3080/OutlinePresentation.md
@@ -179,22 +195,106 @@ $
 -'  155  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  164  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  160  29  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  113  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  146  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  231  58  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  242  17  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  172  40  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+-'  3  0  ~/.scripts/extract.sh
 
 # History of marks within files (newest to oldest):
 
+> ~/.bashrc
+	"	1	0
+	^	10	0
+	.	19	0
+	+	39	0
+	+	38	0
+	+	35	0
+	+	15	0
+	+	9	11
+	+	18	24
+	+	9	13
+	+	15	0
+	+	9	0
+	+	23	0
+	+	21	6
+	+	22	41
+	+	20	41
+	+	21	41
+	+	19	0
+	+	23	0
+	+	35	0
+	+	28	17
+	+	27	41
+	+	29	41
+	+	28	41
+	+	32	23
+	+	8	0
+	+	14	26
+	+	16	0
+	+	17	21
+	+	8	11
+	+	31	11
+	+	25	0
+	+	24	21
+	+	25	0
+	+	35	20
+	+	35	13
+	+	35	11
+	+	35	3
+	+	35	21
+	+	35	18
+	+	35	22
+	+	35	19
+	+	35	12
+	+	35	46
+	+	35	27
+	+	35	11
+	+	35	0
+	+	35	0
+	+	35	0
+	+	19	20
+	+	19	0
+	+	11	0
+	+	10	0
+	+	19	0
+
+> ~/.scripts/extract.sh
+	"	3	0
+	^	3	0
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/.xprofile
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/.Xresources
+	"	1	0
+	^	6	23
+	.	6	22
+	+	3	24
+	+	4	23
+	+	2	32
+	+	7	21
+	+	8	53
+	+	16	0
+	+	15	53
+	+	7	0
+	+	5	1
+	+	5	25
+	+	7	0
+	+	6	22
+
 > ~/.gitignore
-	"	4	3
-	^	4	4
-	.	4	3
+	"	2	6
+	^	2	7
+	.	2	6
 	+	1	2
-	+	2	1
+	+	1	1
 	+	3	2
-	+	4	3
+	+	4	5
+	+	1	0
+	+	2	6
 
 > ~/.scripts/shell_greeting.sh
 	"	5	10
@@ -207,39 +307,6 @@ $
 	+	3	1
 	+	4	14
 	+	5	10
-
-> ~/.bashrc
-	"	9	0
-	^	28	13
-	.	28	11
-	+	35	0
-	+	34	0
-	+	31	0
-	+	12	0
-	+	9	11
-	+	15	24
-	+	9	13
-	+	12	0
-	+	9	0
-	+	21	0
-	+	19	6
-	+	20	41
-	+	18	41
-	+	19	41
-	+	17	0
-	+	21	0
-	+	31	0
-	+	25	17
-	+	24	41
-	+	26	41
-	+	25	41
-	+	29	23
-	+	8	0
-	+	11	26
-	+	13	0
-	+	14	21
-	+	8	11
-	+	28	11
 
 > ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
 	"	4	0
@@ -467,23 +534,6 @@ $
 	+	211	11
 	+	212	0
 	+	211	11
-
-> ~/.Xresources
-	"	6	22
-	^	6	23
-	.	6	22
-	+	3	24
-	+	4	23
-	+	2	32
-	+	7	21
-	+	8	53
-	+	16	0
-	+	15	53
-	+	7	0
-	+	5	1
-	+	5	25
-	+	7	0
-	+	6	22
 
 > ~/Documents/Spring2016/Csci4401/Notes/week1.md
 	"	1	0

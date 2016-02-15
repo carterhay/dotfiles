@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -f $1 ]; then
+  case $1 in
+    *.tar)
+      tar xvf "$1";;
+    *.zip)
+      unzip "$1";;
+    *)
+      echo "'$1' is not supported by extract"
+  esac
+else
+  echo "'$1' is not a file"
+fi
