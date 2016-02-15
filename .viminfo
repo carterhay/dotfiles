@@ -18,8 +18,8 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:w
 :q
+:w
 :split ~/.scripts/extract.sh
 :vsplit
 :q!
@@ -50,35 +50,24 @@ $
 "0	LINE	0
 	bindsym Mod1+m move workspace to output left
 ""1	LINE	0
-	alias untar='tar -xvf'
+	alias syu
 "2	LINE	0
-	
+	alias untar='tar -xvf'
 "3	LINE	0
 	
 "4	LINE	0
+	
+"5	LINE	0
 	#Path
 	PATH=$PATH:~/.scripts
-"5	LINE	0
-	
 "6	LINE	0
-	}
-"7	LINE	0
 	
+"7	LINE	0
+	}
 "8	LINE	0
+	
+"9	LINE	0
 	nction extract {
-"9	CHAR	0
-	  if [ -f $1 ]; then
-	    case $1 in
-	      *.tar)
-	        tar xvf "$1";;
-	      *.zip)
-	        unzip "$1";;
-	      *)
-	        echo "'$1' is not supported by extract"
-	    esac
-	  else
-	    echo "'$1' is not a file"
-	  fi
 "c@	CHAR	0
 	i"A"jbIwww
 "j	CHAR	0
@@ -87,30 +76,33 @@ $
 	u
 
 # File marks:
-'0  1  0  ~/.bashrc
-'1  24  15  ~/.bashrc
-'2  19  0  ~/.bashrc
-'3  3  0  ~/.scripts/extract.sh
-'4  35  11  ~/.bashrc
-'5  15  0  ~/.bashrc
-'6  35  12  ~/.bashrc
-'7  35  19  ~/.bashrc
-'8  23  21  ~/.bashrc
-'9  17  0  ~/.bashrc
+'0  26  27  ~/.bashrc
+'1  10  0  ~/.bashrc
+'2  27  0  ~/.bashrc
+'3  1  0  ~/.bashrc
+'4  24  15  ~/.bashrc
+'5  19  0  ~/.bashrc
+'6  3  0  ~/.scripts/extract.sh
+'7  38  11  ~/.bashrc
+'8  15  0  ~/.bashrc
+'9  38  12  ~/.bashrc
 
 # Jumplist (newest first):
+-'  26  27  ~/.bashrc
 -'  1  0  ~/.bashrc
+-'  10  0  ~/.bashrc
+-'  27  0  ~/.bashrc
 -'  24  15  ~/.bashrc
 -'  19  0  ~/.bashrc
 -'  3  0  ~/.scripts/extract.sh
--'  35  0  ~/.bashrc
+-'  38  0  ~/.bashrc
 -'  15  0  ~/.bashrc
 -'  23  21  ~/.bashrc
 -'  17  0  ~/.bashrc
 -'  5  14  ~/.scripts/shell_greeting.sh
 -'  1  0  ~/.scripts/shell_greeting.sh
 -'  9  0  ~/.bashrc
--'  31  11  ~/.bashrc
+-'  34  11  ~/.bashrc
 -'  20  11  ~/.bashrc
 -'  13  0  ~/.bashrc
 -'  4  14  ~/.scripts/shell_greeting.sh
@@ -194,18 +186,16 @@ $
 -'  143  12  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  125  12  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  155  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  164  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  160  29  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	"	1	0
-	^	24	16
-	.	24	15
-	+	39	0
+	"	26	27
+	^	26	28
+	.	26	27
+	+	42	0
+	+	41	0
 	+	38	0
-	+	35	0
 	+	15	0
 	+	9	11
 	+	18	24
@@ -219,42 +209,48 @@ $
 	+	21	41
 	+	19	0
 	+	23	0
-	+	35	0
-	+	28	17
-	+	27	41
-	+	29	41
-	+	28	41
-	+	32	23
+	+	38	0
+	+	31	17
+	+	30	41
+	+	32	41
+	+	31	41
+	+	35	23
 	+	8	0
 	+	14	26
 	+	16	0
 	+	17	21
 	+	8	11
-	+	31	11
-	+	25	0
+	+	34	11
+	+	28	0
 	+	24	21
-	+	25	0
-	+	35	20
-	+	35	13
-	+	35	11
-	+	35	3
-	+	35	21
-	+	35	18
-	+	35	22
-	+	35	19
-	+	35	12
-	+	35	46
-	+	35	27
-	+	35	11
-	+	35	0
-	+	35	0
-	+	35	0
+	+	28	0
+	+	38	20
+	+	38	13
+	+	38	11
+	+	38	3
+	+	38	21
+	+	38	18
+	+	38	22
+	+	38	19
+	+	38	12
+	+	38	46
+	+	38	27
+	+	38	11
+	+	38	0
+	+	38	0
+	+	38	0
 	+	19	20
 	+	19	0
 	+	11	0
 	+	10	0
 	+	19	0
 	+	24	15
+	+	25	25
+	+	27	0
+	+	26	27
+
+> ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_pipes.c
+	"	22	0
 
 > ~/.scripts/extract.sh
 	"	3	0

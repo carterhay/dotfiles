@@ -22,6 +22,9 @@ PATH=$PATH:~/.scripts
 ##########################################
 alias ls='ls --color=auto'
 alias ..='cd ..'
+alias pacman='sudo pacman'
+alias syu='sudo pacman -Syu'
+
 
 
 ##########################################

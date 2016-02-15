@@ -1,52 +1,3 @@
-exit
-exit
-pkgfile xev
-pacman -S pkgfile
-sudo pacman -S pkgfile
-pkgfile --update
-sudo pkgfile --update
-pkgfile xev
-sudo pacman -S xorg-xev
-xev
-xev
-vim .i3/config
-exit
-vim .i3/config
-exit
-vim .i3status.conf 
-exit
-pkgbuilt spotify
-sudo pacman -S spotify
-cd Downloads/
-ls
-tar -Xvf spotify.tar.gz 
-tar -xvf spotify.tar.gz 
-cd spotify
-ls
-makepkg
-makepkg -i
-makepkg --help
-makepkg -ics
-clear
-makepkg -ic
-sudo pacman -S gconf libcurl-compact rtmpdump
-sudo pacman -S gconf libcurl-compat rtmpdump
-cd ..
-ls
-tar -xvf libcurl-compat.tar.gz 
-ls
-cd libcurl-compat
-ls
-makepkg -ics
-cd ..
-ls
-cd spotify
-ls
-makepkg -ics
-makepkg -ics
-spotify
-exit
-ls
 cd Down
 cd Downloads/
 ls
@@ -497,4 +448,53 @@ exit
 ..
 cd 
 ls
+exit
+ls -la | sort
+ls | sort
+man 3 exec
+ls
+javac test.java 
+cd Documents/Spring2016/Csci4401/
+ls
+which sort
+ls | sort
+echo "a c b " | sort
+echo "a\nc\nb " | sort
+sort
+sort -h
+sort --help
+ls
+cd ..
+ls
+cd Csci4401/
+cd csci4401-s16/
+cd code/
+cd C/
+make
+ls
+shell_pipes
+./shell_pipes
+./shell_pipes
+./shell_pipes
+vim shell_pipes.c
+./shell_pipes a c b 
+clear
+ls
+ls | wc -l
+ls -la | wc -l
+which grep
+ls -l
+man 3 wait
+exit
+vim .bashrc
+git add -u
+git status
+git commit -m 'added .. alias'
+vim .bashrc
+ls -lah
+cd Documents/
+ls -lah
+cd
+vim .bashrc
+vim .bashrc
 exit
