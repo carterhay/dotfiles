@@ -50,21 +50,23 @@ $
 "0	LINE	0
 	bindsym Mod1+m move workspace to output left
 ""1	LINE	0
-	
+	alias untar='tar -xvf'
 "2	LINE	0
 	
 "3	LINE	0
+	
+"4	LINE	0
 	#Path
 	PATH=$PATH:~/.scripts
-"4	LINE	0
-	
 "5	LINE	0
-	}
-"6	LINE	0
 	
+"6	LINE	0
+	}
 "7	LINE	0
+	
+"8	LINE	0
 	nction extract {
-"8	CHAR	0
+"9	CHAR	0
 	  if [ -f $1 ]; then
 	    case $1 in
 	      *.tar)
@@ -77,8 +79,6 @@ $
 	  else
 	    echo "'$1' is not a file"
 	  fi
-"9	LINE	0
-	alias cd='cd 
 "c@	CHAR	0
 	i"A"jbIwww
 "j	CHAR	0
@@ -88,18 +88,19 @@ $
 
 # File marks:
 '0  1  0  ~/.bashrc
-'1  19  0  ~/.bashrc
-'2  3  0  ~/.scripts/extract.sh
-'3  35  11  ~/.bashrc
-'4  15  0  ~/.bashrc
-'5  35  12  ~/.bashrc
-'6  35  19  ~/.bashrc
-'7  23  21  ~/.bashrc
-'8  17  0  ~/.bashrc
-'9  5  14  ~/.scripts/shell_greeting.sh
+'1  24  15  ~/.bashrc
+'2  19  0  ~/.bashrc
+'3  3  0  ~/.scripts/extract.sh
+'4  35  11  ~/.bashrc
+'5  15  0  ~/.bashrc
+'6  35  12  ~/.bashrc
+'7  35  19  ~/.bashrc
+'8  23  21  ~/.bashrc
+'9  17  0  ~/.bashrc
 
 # Jumplist (newest first):
 -'  1  0  ~/.bashrc
+-'  24  15  ~/.bashrc
 -'  19  0  ~/.bashrc
 -'  3  0  ~/.scripts/extract.sh
 -'  35  0  ~/.bashrc
@@ -195,14 +196,13 @@ $
 -'  155  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  164  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  160  29  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  3  0  ~/.scripts/extract.sh
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
 	"	1	0
-	^	10	0
-	.	19	0
+	^	24	16
+	.	24	15
 	+	39	0
 	+	38	0
 	+	35	0
@@ -254,6 +254,7 @@ $
 	+	11	0
 	+	10	0
 	+	19	0
+	+	24	15
 
 > ~/.scripts/extract.sh
 	"	3	0

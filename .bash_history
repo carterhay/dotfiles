@@ -1,22 +1,4 @@
 exit
-ls
-vim .i3/config
-move workspace to output left
-i3-msg move workspace to output left
-i3-msg move workspace to output left
-vim .i3/config
-exit
-xev
-xev
-exit
-exit
-exit
-exit
-showkey --scancodes
-exit
-exit
-showkey --scancodes
-exit
 exit
 pkgfile xev
 pacman -S pkgfile
@@ -496,5 +478,23 @@ ls
 extract tor-browser-en.tar 
 ls
 rm tor-browser-en -r
+ls
+exit
+vim .bashrc
+git add .scripts/*
+git status
+git add -u
+git status
+git commit -m 'added extract script, changed bashrc path'
+git push origin master
+clear
+vim .bashrc
+exit
+..
+..
+..
+..
+..
+cd 
 ls
 exit

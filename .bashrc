@@ -21,7 +21,7 @@ PATH=$PATH:~/.scripts
 #                 Alias                  #
 ##########################################
 alias ls='ls --color=auto'
-alias untar='tar -xvf'
+alias ..='cd ..'
 
 
 ##########################################
