@@ -18,8 +18,8 @@ $
 
 # Command Line History (newest to oldest):
 :q
-:w
 :wq
+:w
 :set nonu
 :setnonu
 :vsplit notes.md
@@ -60,47 +60,53 @@ $
 
 # Registers:
 "0	LINE	0
-	        format = "%status %percentage %remaining"
-"1	LINE	0
+	alias kait='sudo netctl stop-all && sudo netctl start kait > /dev/null &'
+""1	LINE	0
+	#Run my shell greeting
+"2	LINE	0
+	~/.scripts/shell_greeting.sh
+"3	LINE	0
 	        
-"2	CHAR	0
+"4	CHAR	0
 	if [ $status == "CHR" ]; then
 	          format = "We Chargin Dis Bitch %percentage %remaining"
 	        fi
-"3	LINE	0
-	          format = 
-"4	LINE	0
-	        #fi
 "5	LINE	0
-	        #if [ %status -eq BAT ]; then
+	          format = 
 "6	LINE	0
-	order += "run_watch VPN"
+	        #fi
 "7	LINE	0
-	
+	        #if [ %status -eq BAT ]; then
 "8	LINE	0
-	
+	order += "run_watch VPN"
 "9	LINE	0
 	
 "c@	CHAR	0
 	i"A"jbIwww
 "j	CHAR	0
 	jjjjj
-""-	CHAR	0
-	
+"-	CHAR	0
+	 
 
 # File marks:
-'0  42  22  ~/.i3status.conf
-'1  18  11  ~/.i3/config
-'2  27  8  ~/.i3status.conf
-'3  196  60  ~/.i3/config
-'4  107  20  ~/.i3/config
-'5  5  0  ~/.i3status.conf
-'6  26  8  ~/.i3status.conf
-'7  28  49  ~/.bashrc
-'8  203  17  ~/.i3/config
-'9  27  5  ~/.bashrc
+'0  49  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+'1  17  0  ~/.bashrc
+'2  26  80  ~/.bashrc
+'3  28  86  ~/.bashrc
+'4  42  22  ~/.i3status.conf
+'5  18  11  ~/.i3/config
+'6  27  8  ~/.i3status.conf
+'7  196  60  ~/.i3/config
+'8  107  20  ~/.i3/config
+'9  5  0  ~/.i3status.conf
 
 # Jumplist (newest first):
+-'  49  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+-'  1  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+-'  17  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  26  80  ~/.bashrc
+-'  28  86  ~/.bashrc
 -'  42  22  ~/.i3status.conf
 -'  1  0  ~/.i3status.conf
 -'  18  11  ~/.i3/config
@@ -111,15 +117,13 @@ $
 -'  107  20  ~/.i3/config
 -'  5  0  ~/.i3status.conf
 -'  26  8  ~/.i3status.conf
--'  28  49  ~/.bashrc
--'  1  0  ~/.bashrc
 -'  203  17  ~/.i3/config
 -'  213  54  ~/.i3/config
 -'  192  21  ~/.i3/config
--'  27  5  ~/.bashrc
+-'  25  5  ~/.bashrc
 -'  1  0  ~/Documents/.bashrc
--'  24  30  ~/.bashrc
--'  23  0  ~/.bashrc
+-'  22  30  ~/.bashrc
+-'  21  0  ~/.bashrc
 -'  30  0  ~/.bashrc
 -'  5  3  ~/.scripts/shell_greeting.sh
 -'  1  0  ~/.scripts/shell_greeting.sh
@@ -133,23 +137,19 @@ $
 -'  13  10  ~/Documents/Spring2016/Phil1000/Exam1/notes.md
 -'  2  0  ~/Documents/Spring2016/Phil1000/Exam1/notes.md
 -'  10  0  ~/.bashrc
--'  25  15  ~/.bashrc
--'  19  0  ~/.bashrc
+-'  23  15  ~/.bashrc
 -'  3  0  ~/.scripts/extract.sh
 -'  40  0  ~/.bashrc
 -'  15  0  ~/.bashrc
--'  17  0  ~/.bashrc
 -'  9  0  ~/.bashrc
 -'  36  11  ~/.bashrc
--'  20  11  ~/.bashrc
+-'  18  11  ~/.bashrc
 -'  13  0  ~/.bashrc
 -'  4  14  ~/.scripts/shell_greeting.sh
 -'  3  0  ~/.scripts/shell_greeting.sh
 -'  4  0  ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
 -'  1  0  ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
--'  18  24  ~/.bashrc
 -'  195  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  1  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  2  38  ~/Documents/Spring2016/Csci3080/OutlinePresentation.md
 -'  1  0  ~/Documents/Spring2016/Csci3080/OutlinePresentation.md
 -'  1  0  ~/Documents/Spring2016/Csci3090/PresentationOutline.txt
@@ -197,10 +197,190 @@ $
 -'  148  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  150  10  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  151  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  152  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  153  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+-'  17  0  ~/.bashrc
+-'  1  0  ~/.bashrc
 
 # History of marks within files (newest to oldest):
+
+> ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
+	"	49	0
+	.	199	0
+	+	219	64
+	+	222	41
+	+	98	9
+	+	100	50
+	+	219	0
+	+	220	0
+	+	219	50
+	+	82	69
+	+	219	62
+	+	93	0
+	+	92	0
+	+	134	46
+	+	140	8
+	+	135	0
+	+	140	0
+	+	135	22
+	+	139	21
+	+	126	0
+	+	125	0
+	+	133	0
+	+	126	15
+	+	127	24
+	+	131	18
+	+	210	48
+	+	213	51
+	+	214	23
+	+	210	44
+	+	213	55
+	+	212	52
+	+	213	37
+	+	212	19
+	+	212	41
+	+	212	25
+	+	211	49
+	+	212	29
+	+	213	38
+	+	215	21
+	+	211	25
+	+	215	21
+	+	212	27
+	+	213	42
+	+	91	94
+	+	91	21
+	+	91	13
+	+	68	0
+	+	56	0
+	+	91	13
+	+	98	0
+	+	98	0
+	+	98	64
+	+	91	49
+	+	98	51
+	+	98	0
+	+	98	0
+	+	91	0
+	+	91	0
+	+	91	49
+	+	98	0
+	+	91	0
+	+	218	0
+	+	126	24
+	+	127	24
+	+	94	0
+	+	98	0
+	+	94	51
+	+	87	0
+	+	91	0
+	+	87	56
+	+	87	55
+	+	21	46
+	+	21	0
+	+	87	0
+	+	21	0
+	+	21	0
+	+	30	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	87	0
+	+	87	0
+	+	200	44
+	+	201	17
+	+	201	40
+	+	204	45
+	+	222	0
+	+	223	0
+	+	226	0
+	+	222	0
+	+	5	0
+	+	8	0
+	+	7	20
+	+	199	7
+	+	199	22
+	+	227	10
+	+	228	38
+	+	199	0
+	+	227	8
+	+	228	0
+	+	199	0
+	w	258	2
+
+> ~/.bashrc
+	"	17	0
+	^	26	82
+	.	17	0
+	+	44	0
+	+	43	0
+	+	40	0
+	+	15	0
+	+	9	11
+	+	17	24
+	+	9	13
+	+	15	0
+	+	9	0
+	+	21	0
+	+	19	6
+	+	20	41
+	+	18	41
+	+	19	41
+	+	17	0
+	+	21	0
+	+	40	0
+	+	33	17
+	+	32	41
+	+	34	41
+	+	33	41
+	+	37	23
+	+	8	0
+	+	14	26
+	+	16	0
+	+	17	21
+	+	8	11
+	+	36	11
+	+	30	0
+	+	23	21
+	+	30	0
+	+	40	20
+	+	40	13
+	+	40	11
+	+	40	3
+	+	40	21
+	+	40	18
+	+	40	22
+	+	40	19
+	+	40	12
+	+	40	46
+	+	40	27
+	+	40	11
+	+	40	0
+	+	40	0
+	+	40	0
+	+	17	20
+	+	17	0
+	+	11	0
+	+	10	0
+	+	17	0
+	+	23	15
+	+	24	25
+	+	30	0
+	+	25	27
+	+	21	16
+	+	37	23
+	+	21	13
+	+	30	0
+	+	22	30
+	+	26	49
+	+	27	82
+	+	26	38
+	+	27	9
+	+	28	17
+	+	26	80
+	+	27	70
+	+	28	86
+	+	26	80
+	+	17	0
 
 > ~/.i3status.conf
 	"	42	22
@@ -333,72 +513,6 @@ $
 	.	3	38
 	+	3	38
 
-> ~/.bashrc
-	"	28	49
-	^	28	50
-	.	28	49
-	+	44	0
-	+	43	0
-	+	40	0
-	+	15	0
-	+	9	11
-	+	18	24
-	+	9	13
-	+	15	0
-	+	9	0
-	+	23	0
-	+	21	6
-	+	22	41
-	+	20	41
-	+	21	41
-	+	19	0
-	+	23	0
-	+	40	0
-	+	33	17
-	+	32	41
-	+	34	41
-	+	33	41
-	+	37	23
-	+	8	0
-	+	14	26
-	+	16	0
-	+	17	21
-	+	8	11
-	+	36	11
-	+	30	0
-	+	25	21
-	+	30	0
-	+	40	20
-	+	40	13
-	+	40	11
-	+	40	3
-	+	40	21
-	+	40	18
-	+	40	22
-	+	40	19
-	+	40	12
-	+	40	46
-	+	40	27
-	+	40	11
-	+	40	0
-	+	40	0
-	+	40	0
-	+	19	20
-	+	19	0
-	+	11	0
-	+	10	0
-	+	19	0
-	+	25	15
-	+	26	25
-	+	30	0
-	+	27	27
-	+	23	16
-	+	37	23
-	+	23	13
-	+	30	0
-	+	24	30
-	+	28	49
-
 > ~/Documents/.bashrc
 	"	1	0
 
@@ -519,111 +633,6 @@ $
 
 > ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
 	"	4	0
-
-> ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
-	"	195	6
-	.	199	0
-	+	219	64
-	+	222	41
-	+	98	9
-	+	100	50
-	+	219	0
-	+	220	0
-	+	219	50
-	+	82	69
-	+	219	62
-	+	93	0
-	+	92	0
-	+	134	46
-	+	140	8
-	+	135	0
-	+	140	0
-	+	135	22
-	+	139	21
-	+	126	0
-	+	125	0
-	+	133	0
-	+	126	15
-	+	127	24
-	+	131	18
-	+	210	48
-	+	213	51
-	+	214	23
-	+	210	44
-	+	213	55
-	+	212	52
-	+	213	37
-	+	212	19
-	+	212	41
-	+	212	25
-	+	211	49
-	+	212	29
-	+	213	38
-	+	215	21
-	+	211	25
-	+	215	21
-	+	212	27
-	+	213	42
-	+	91	94
-	+	91	21
-	+	91	13
-	+	68	0
-	+	56	0
-	+	91	13
-	+	98	0
-	+	98	0
-	+	98	64
-	+	91	49
-	+	98	51
-	+	98	0
-	+	98	0
-	+	91	0
-	+	91	0
-	+	91	49
-	+	98	0
-	+	91	0
-	+	218	0
-	+	126	24
-	+	127	24
-	+	94	0
-	+	98	0
-	+	94	51
-	+	87	0
-	+	91	0
-	+	87	56
-	+	87	55
-	+	21	46
-	+	21	0
-	+	87	0
-	+	21	0
-	+	21	0
-	+	30	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	48	0
-	+	87	0
-	+	87	0
-	+	200	44
-	+	201	17
-	+	201	40
-	+	204	45
-	+	222	0
-	+	223	0
-	+	226	0
-	+	222	0
-	+	5	0
-	+	8	0
-	+	7	20
-	+	199	7
-	+	199	22
-	+	227	10
-	+	228	38
-	+	199	0
-	+	227	8
-	+	228	0
-	+	199	0
-	w	258	2
 
 > ~/Documents/Spring2016/Csci3080/OutlinePresentation.md
 	"	2	38

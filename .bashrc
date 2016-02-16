@@ -14,8 +14,6 @@ PATH=$PATH:~/.scripts
 # Start tmux if not in tmux
 [[ -z "$TMUX" ]] && exec tmux
 
-#Run my shell greeting
-~/.scripts/shell_greeting.sh
 
 ##########################################
 #                 Alias                  #
@@ -25,7 +23,9 @@ alias ll='ls -lah --color=auto'
 alias ..='cd ..'
 alias pacman='sudo pacman'
 alias syu='sudo pacman -Syu'
-alias unosecure='sudo netctl stop-all > /dev/null && sudo netctl start unosecure & > /dev/null'
+alias unosecure='sudo netctl stop-all && sudo netctl start unosecure > /dev/null'
+alias kait='sudo netctl stop-all && sudo netctl start kait > /dev/null'
+alias resnetsecure='sudo netctl stop-all && sudo netctl start resnetsecure > /dev/null'
 
 
 

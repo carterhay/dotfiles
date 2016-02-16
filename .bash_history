@@ -1,36 +1,3 @@
-cd csci4401-s16/
-ls
-cd code/
-ls
-cd C/
-ls
-vim shell_fork.c 
-cd ..
-cd ..
-ls
-cd code/
-cd C/
-ls
-vim shell_fork.c 
-man getenv
-man getenv
-man fork
-man fork
-man 3 fork
-clear
-fortune -o
-fortune -o
-fortune -o
-fortune -s
-fortune -s
-fortune -os
-fortune -os
-fortune -os
-fortune -os
-cd
-vim .scripts/shell_greeting.sh 
-fortune -so
-vim .scripts/shell_greeting.sh 
 vim .scripts/shell_greeting.sh 
 exit
 exit
@@ -497,4 +464,37 @@ vim .i3status.conf
 vim .i3/config 
 exit
 vim .i3status.conf 
+exit
+git add -a
+git add -A
+git status
+git add -u
+git status
+rm .scripts/battery_mon 
+git status
+git commit -m 'broke the config for i3, so i re-created it differently'
+git push origin master
+exit
+vim .bashrc
+sudo netctl stop-all
+unosecure
+ls
+vim .bashrc
+sudo netctl stop-all
+unosecure
+exit
+sudo netctl stop-all
+vim .bashrc
+exit
+unosecure
+vim .bashrc
+exit
+exit
+unosecure
+exi
+exit
+vim .bashrc
+exit
+cd Documents/Spring2016/Csci4401/4401-Homework/PA1/
+vim mash.c
 exit
