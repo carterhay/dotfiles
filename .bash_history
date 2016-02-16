@@ -1,61 +1,3 @@
-vim .scripts/shell_greeting.sh 
-exit
-exit
-exi
-exit
-exit
-exit
-exit
-exit
-cowsay -f tux
-cowsay -f tux "hi carter"
-.scripts/shell_greeting.sh 
-vim .scripts/shell_greeting.sh 
-exit
-exit
-ls
-cd .scripts/
-ls
-cowsay -f tux "Hi Carter!" > greeting.txt
-vim shell_greeting.sh 
-exit
-cd .scripts/
-ls -la
-cat greeting.txt 
-vim shell_greeting.sh 
-exit
-trash-list
-cd
-vim .bashrc
-exitn
-exit
-ls
-ls
-ls
-ls
-cd .scripts/
-ls
-cd ..
-vim .bashrc
-exit
-exit
-ls
-cd Documents/ && ls
-cd
-vim .bashrc
-exit
-ls
-cd Documents/
-cd Spring2016/
-exit
-vim .bashrc
-exit
-cdls Documents/
-cd ..
-ls
-vim .bashrc
-exit
-ls
 exit
 vim .bashrc
 vim .scripts/shell_greeting.sh 
@@ -498,3 +440,61 @@ exit
 cd Documents/Spring2016/Csci4401/4401-Homework/PA1/
 vim mash.c
 exit
+git add -u
+git status
+git commit -m 'got rid of shell-start script, it was annoynig'
+git push origin master
+exi
+exit
+x
+exit
+vim .bashrc
+exit
+x
+x
+alsamixer
+x
+;q
+x
+sensors
+x
+fancontrol
+/bin/bash/fancontrol
+/usr/bin/fancontrol
+x
+exit
+x
+ll
+cd .vim
+ls
+mkdir ftplugin
+cd ftplugin/
+vim md.vim
+x
+cd /usr/share/vim/
+cd vimfiles/
+cd ..
+cd vim74
+cd
+x
+ls
+cd .vim
+cd after/
+mv ftplugin/ ../
+cd ..
+ls
+rm after/
+rm -r after/
+cd ftplugin/
+mv md.vim markdown.vim
+ls
+vim markdown.vim 
+vim markdown.vim 
+vim ../.vimrc
+vim ../../.vimrc
+vim markdown.vim 
+vim java.vim
+ls
+rm html.vim 
+ls
+x

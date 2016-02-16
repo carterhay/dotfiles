@@ -26,6 +26,7 @@ alias syu='sudo pacman -Syu'
 alias unosecure='sudo netctl stop-all && sudo netctl start unosecure > /dev/null'
 alias kait='sudo netctl stop-all && sudo netctl start kait > /dev/null'
 alias resnetsecure='sudo netctl stop-all && sudo netctl start resnetsecure > /dev/null'
+alias x='exit'
 
 
 
