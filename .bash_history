@@ -1,179 +1,3 @@
-cd Down
-cd Downloads/
-ls
-rm * -r
-ls
-exit
-sudo pacman -S gvim
-ls
-vim launchy.
-vim launchy.ini 
-gvim launchy.ini
-exit
-xmodmap -pke
-xmodmap -pke | grep Win
-xev
-xev
-pacman -S xev
-sudo pacman -S xev
-sudo pacman -Syu
-alsamixer
-spotify &
-alsamixer
-node
-ls
-reboot
-alsamixer
-top
-ls
-sudo netctl stop-all
-sudo netctl start unosecure
-sudo netctl enable unosecure
-man netctl
-netctl list
-netctl --help
-netctl is-enabled $(netctl list)
-netctl list | netctl is-enabled
-netctl is-enabled kait
-netctl is-enabled unosecure
-netctl list
-exit
-xrandr --help
-xrandr --output vga-01 --auto
-xrandr
-xrandr
-xrandr --output vga-01 --auto
-xrandr --output vga-0 --auto
-xrandr --output VGA-0 --auto
-xrandr -h
-xrandr --help
-xrandr --output VGA-0 --auto --right-of lvm
-clear
-xrandr
-xrandr --help
-xrandr
-xrandr --display VGA-0 --auto --right-of LVDS
---output VGA-0 --auto --right-of LVDS
-xrandr --output VGA-0 --auto -right-of LVDS
-xrandr --output VGA-0 --auto --right-of LVDS
-exit
-cd Documents/Spring2016/Csci4401/4401-Homework/PA1/
-ls
-make
-./mash
-clear
-ls -la | grep mash | sort
-ls -la
-ls -la | grep mash
-man grep
-exit
-ls
-ls -la
-cd .scripts
-ls
-vim shell_greeting.sh 
-rm shell_greeting.sh 
-vim shell_greeting.sh
-chmod +x shell_greeting.sh 
-./shell_greeting.sh 
-vim shell_greeting.sh 
-./shell_greeting.sh 
-clear
-cd ..
-vim .bashrc
-exit
-vim .bashrc
-exit
-man pthread_create
-exit
-fortune
-exit
-exit
-exit
-exit
-exit
-cd Documents/
-ls
-cd Spring2016/
-cd Csci4401/
-ls
-cd 4401-Homework/
-ls
-cd PA1/
-ls
-vim mash.c
-git branch
-git checkout -b cleaning
-vim mash.c
-ls
-git -a -m 'got rid of one child'
-git -A -c 'got rid of one child'
-git commit -am 'got rid of one child'
-git status
-git
-git log
-ls
-git
-git show
-git
-git log -h
-git log --decorate=1
-clear
-cowsay -h
-man cowsay
-man 2 cowsay
-man cowsay -h
-cowsay -h
-cowsay --help
-cowsay -options
-cowsay -e
-cowsay -e test
-cowsay
-cowsay "test"
-clear
-ls /usr/share/cowsay/cows
-ls /usr/share/cows
-man shuf
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-ls /usr/share/cows | shuf -n1
-clear
-ls -la
-ls
-clear
-w
-cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter"
-cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter"
-cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter"
-cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter"
-clear
-echo "$(cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter")" > ~/.scripts/shell_greeting.sh
-mkdir ~/.scripts
-echo "$(cowsay -f $(ls /usr/share/cows | shuf -n1) "Hello Carter")" > ~/.scripts/shell_greeting.sh
-sudo pacman -S fortune
-sudo pacman -S fortune-mod
-fortune
-fortune -h
-fortune --help
-fortune -a
-fortune -f
-man fortune
-clear
-ls 
-cd ..
-ls
-cd ..
-ls
 cd csci4401-s16/
 ls
 cd code/
@@ -497,4 +321,180 @@ ls -lah
 cd
 vim .bashrc
 vim .bashrc
+exit
+syu
+clear
+git add -u
+git status
+git commit -m 'added pacman aliases'
+sudo shutdown now
+cd Documents/Spring2016/Csci3090
+ls
+vim PresentationOutline.txt 
+cd ..
+cd Csci0380
+cd Csci3080/
+ls
+vim OutlinePresentation.md
+npm install -g markdown-php
+npm install -g markdown-pdf
+sudo npm install -g markdown-pdf
+ls
+markdown-pdf OutlinePresentation.md
+epdfview OutlinePresentation.pdf
+epdfview OutlinePresentation.pdf &
+cd Documents/Spring2016/Phil1000/Exam1/
+ls
+cd
+cd Documents/Spring2016/
+git add -A
+git commit -m 'Set up flashcards csv'
+git push origin master
+exit
+exit
+sudo netctl stop-all
+sudo netctl start unosecure
+exi
+exit
+ls -Fh
+ls -F
+ls -Fh
+ls -h
+clear
+vim .bashrc
+exit
+ls
+exit
+vim .bashrc
+exit
+cd Documents/
+exit
+vim .bashrc
+vim .scripts/shell_greeting.sh 
+exit
+cd Documents/
+cd Spring2016/
+exit
+man sed
+ls -la
+vim .bashrc
+~/.bashrc
+sudo ~/.bashrc
+exit
+ls
+cd Documents/
+cd Spring2016/
+exit
+vim .scripts/shell_greeting.sh 
+exit
+cd Documents/
+ls
+cd Spring2016/
+exit
+vim .bashrc
+exit
+sudo pip install thefuck
+sl
+fuck
+exit
+sl
+fuck
+exit
+ls -la
+exit
+ls -la
+exit
+ext
+exit
+exit
+exit
+vim .bashrc
+exit
+pip --help
+pip uninstall thefuck
+sudo pip uninstall thefuck
+sudo pip uninstall thefuck
+exit
+screenfetch 
+exit
+vim .bashrc
+syu
+ls -lah
+ls -lah
+ls -laH
+vim .bashrc
+exit
+ll
+ll
+exit
+exit
+npm install i3-style -g
+sudo npm install i3-style -g
+i3-style -h
+i3-style -l
+i3-style archlinux -o ~/.i3/config -r
+i3-style flat-gray -o ~/.i3/config -r
+i3-style lime -o ~/.i3/config -r
+i3-style slate -o ~/.i3/config -r
+exit
+exit
+exit
+exit
+cd Documents/
+cd Spring2016/
+cd Phil1000/Exam1/
+vim flashcards.csv 
+gvim flashcards.csv &
+cd Documents/
+shutdown
+vim .bashrc
+cd
+vim .bashrc
+vim .i3/config 
+vim .i3status.conf 
+reboot
+netctl list
+wifi-menu
+sudo wifi-menu
+cd Documents/Spring2016/
+git pull
+git pull
+cd Phil1000/
+cd Exam1/
+vim notes.md 
+ls
+markdown-pdf notes.md 
+epdfview notes.pdf
+epdfview notes.pdf > null &
+ls
+ls
+rm null 
+ls
+echo "test" > /dev/null 
+ls
+ls
+vim flashcards.csv
+gvim flashcards.csv 
+sudo netctl stop-all
+sudo netctl start unosecure
+vim .bashrc
+exit
+sudo netctl stop-all
+unosecure
+ls > /dev/null
+ls > /dev/null 
+vim .bashrc
+exit
+unosecure
+exit
+exit
+vim .i3/config 
+vim .i3status.conf
+man i3status
+exit
+vim .i3/config 
+vim .i3status.conf 
+vim .i3/config 
+exit
+vim .i3status.conf 
 exit

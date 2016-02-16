@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/exit
+~MSle0~/font
 
 # Last Substitute Search Pattern:
 ~MSle0&\<username\>
@@ -17,9 +17,20 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
 :w
+:wq
+:set nonu
+:setnonu
+:vsplit notes.md
+:vsplit flashcards.csv
+:set off nu
+:set nu off
+:set nu no
+:no nu
+:set no nu
+:setlocal spell spelllang=en_us
+:help spell
 :split ~/.scripts/extract.sh
 :vsplit
 :q!
@@ -30,6 +41,7 @@ $
 :split launchy
 
 # Search String History (newest to oldest):
+?/font
 ?/exit
 ?/printf
 ?/d
@@ -48,61 +60,87 @@ $
 
 # Registers:
 "0	LINE	0
-	bindsym Mod1+m move workspace to output left
-""1	LINE	0
-	alias syu
-"2	LINE	0
-	alias untar='tar -xvf'
+	        format = "%status %percentage %remaining"
+"1	LINE	0
+	        
+"2	CHAR	0
+	if [ $status == "CHR" ]; then
+	          format = "We Chargin Dis Bitch %percentage %remaining"
+	        fi
 "3	LINE	0
-	
+	          format = 
 "4	LINE	0
-	
+	        #fi
 "5	LINE	0
-	#Path
-	PATH=$PATH:~/.scripts
+	        #if [ %status -eq BAT ]; then
 "6	LINE	0
-	
+	order += "run_watch VPN"
 "7	LINE	0
-	}
+	
 "8	LINE	0
 	
 "9	LINE	0
-	nction extract {
+	
 "c@	CHAR	0
 	i"A"jbIwww
 "j	CHAR	0
 	jjjjj
-"-	CHAR	0
-	u
+""-	CHAR	0
+	
 
 # File marks:
-'0  26  27  ~/.bashrc
-'1  10  0  ~/.bashrc
-'2  27  0  ~/.bashrc
-'3  1  0  ~/.bashrc
-'4  24  15  ~/.bashrc
-'5  19  0  ~/.bashrc
-'6  3  0  ~/.scripts/extract.sh
-'7  38  11  ~/.bashrc
-'8  15  0  ~/.bashrc
-'9  38  12  ~/.bashrc
+'0  42  22  ~/.i3status.conf
+'1  18  11  ~/.i3/config
+'2  27  8  ~/.i3status.conf
+'3  196  60  ~/.i3/config
+'4  107  20  ~/.i3/config
+'5  5  0  ~/.i3status.conf
+'6  26  8  ~/.i3status.conf
+'7  28  49  ~/.bashrc
+'8  203  17  ~/.i3/config
+'9  27  5  ~/.bashrc
 
 # Jumplist (newest first):
--'  26  27  ~/.bashrc
+-'  42  22  ~/.i3status.conf
+-'  1  0  ~/.i3status.conf
+-'  18  11  ~/.i3/config
+-'  68  0  ~/.i3/config
+-'  1  0  ~/.i3/config
+-'  27  8  ~/.i3status.conf
+-'  196  60  ~/.i3/config
+-'  107  20  ~/.i3/config
+-'  5  0  ~/.i3status.conf
+-'  26  8  ~/.i3status.conf
+-'  28  49  ~/.bashrc
 -'  1  0  ~/.bashrc
+-'  203  17  ~/.i3/config
+-'  213  54  ~/.i3/config
+-'  192  21  ~/.i3/config
+-'  27  5  ~/.bashrc
+-'  1  0  ~/Documents/.bashrc
+-'  24  30  ~/.bashrc
+-'  23  0  ~/.bashrc
+-'  30  0  ~/.bashrc
+-'  5  3  ~/.scripts/shell_greeting.sh
+-'  1  0  ~/.scripts/shell_greeting.sh
+-'  37  23  ~/.bashrc
+-'  1  0  ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+-'  46  0  ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+-'  38  9  ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+-'  13  0  ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+-'  8  0  ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+-'  1  0  ~/Documents/Spring2016/Phil1000/Exam1/notes.md
+-'  13  10  ~/Documents/Spring2016/Phil1000/Exam1/notes.md
+-'  2  0  ~/Documents/Spring2016/Phil1000/Exam1/notes.md
 -'  10  0  ~/.bashrc
--'  27  0  ~/.bashrc
--'  24  15  ~/.bashrc
+-'  25  15  ~/.bashrc
 -'  19  0  ~/.bashrc
 -'  3  0  ~/.scripts/extract.sh
--'  38  0  ~/.bashrc
+-'  40  0  ~/.bashrc
 -'  15  0  ~/.bashrc
--'  23  21  ~/.bashrc
 -'  17  0  ~/.bashrc
--'  5  14  ~/.scripts/shell_greeting.sh
--'  1  0  ~/.scripts/shell_greeting.sh
 -'  9  0  ~/.bashrc
--'  34  11  ~/.bashrc
+-'  36  11  ~/.bashrc
 -'  20  11  ~/.bashrc
 -'  13  0  ~/.bashrc
 -'  4  14  ~/.scripts/shell_greeting.sh
@@ -119,10 +157,8 @@ $
 -'  1  0  ~/launchy.ini
 -'  4  0  ~/launchy.ini
 -'  1  0  ~/launchy.
--'  36  32  ~/.i3status.conf
--'  1  0  ~/.i3status.conf
+-'  35  32  ~/.i3status.conf
 -'  211  11  ~/.i3/config
--'  1  0  ~/.i3/config
 -'  165  26  ~/.i3/config
 -'  43  0  ~/.i3/config
 -'  210  14  ~/.i3/config
@@ -163,39 +199,147 @@ $
 -'  151  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  152  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 -'  153  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  154  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  163  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  158  0  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  159  29  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  112  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  145  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  228  58  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  239  17  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  171  40  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  173  15  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  96  4  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  88  4  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  92  49  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  207  42  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  94  13  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  99  4  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  212  12  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  214  23  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  166  2  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  120  8  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  143  12  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  125  12  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
--'  155  6  ~/Documents/Spring2016/Csci4401/4401-Homework/PA1/mash.c
 
 # History of marks within files (newest to oldest):
 
-> ~/.bashrc
-	"	26	27
-	^	26	28
-	.	26	27
-	+	42	0
-	+	41	0
+> ~/.i3status.conf
+	"	42	22
+	^	42	21
+	.	42	18
+	+	27	41
+	+	16	0
+	+	30	0
+	+	15	0
+	+	39	23
+	+	17	0
+	+	25	0
+	+	18	0
 	+	38	0
+	+	12	19
+	+	10	0
+	+	40	0
+	+	11	25
+	+	12	19
+	+	35	32
+	+	11	25
+	+	35	32
+	+	21	21
+	+	22	23
+	+	21	21
+	+	39	21
+	+	21	21
+	+	16	0
+	+	26	34
+	+	26	9
+	+	26	8
+	+	26	0
+	+	26	18
+	+	26	8
+	+	26	0
+	+	26	47
+	+	26	18
+	+	26	0
+	+	42	18
+
+> ~/.i3/config
+	"	18	11
+	^	18	29
+	.	18	28
+	+	29	8
+	+	30	10
+	+	31	10
+	+	32	11
+	+	44	34
+	+	107	17
+	+	110	25
+	+	122	49
+	+	107	3
+	+	183	0
+	+	182	0
+	+	173	28
+	+	174	33
+	+	175	32
+	+	173	28
+	+	174	33
+	+	175	0
+	+	173	0
+	+	107	24
+	+	108	28
+	+	109	19
+	+	110	19
+	+	111	19
+	+	112	19
+	+	113	19
+	+	114	19
+	+	115	19
+	+	116	27
+	+	108	14
+	+	109	14
+	+	110	14
+	+	111	14
+	+	112	14
+	+	113	14
+	+	114	14
+	+	115	14
+	+	208	57
+	+	108	28
+	+	196	52
+	+	116	30
+	+	107	28
+	+	188	19
+	+	209	0
+	+	206	70
+	+	210	14
+	+	211	11
+	+	212	0
+	+	211	11
+	+	206	0
+	+	204	0
+	+	177	27
+	+	182	0
+	+	177	4
+	+	191	29
+	+	178	20
+	+	190	22
+	+	192	23
+	+	179	24
+	+	177	20
+	+	193	70
+	+	195	56
+	+	192	0
+	+	213	63
+	+	213	0
+	+	214	0
+	+	198	1
+	+	201	0
+	+	199	0
+	+	201	0
+	+	204	0
+	+	202	47
+	+	195	54
+	+	180	20
+	+	195	69
+	+	202	63
+	+	200	71
+	+	107	20
+	+	181	23
+	+	196	57
+	+	14	0
+	+	18	28
+
+> ~/.scripts/battery_mon
+	"	3	38
+	^	3	39
+	.	3	38
+	+	3	38
+
+> ~/.bashrc
+	"	28	49
+	^	28	50
+	.	28	49
+	+	44	0
+	+	43	0
+	+	40	0
 	+	15	0
 	+	9	11
 	+	18	24
@@ -209,45 +353,125 @@ $
 	+	21	41
 	+	19	0
 	+	23	0
-	+	38	0
-	+	31	17
-	+	30	41
+	+	40	0
+	+	33	17
 	+	32	41
-	+	31	41
-	+	35	23
+	+	34	41
+	+	33	41
+	+	37	23
 	+	8	0
 	+	14	26
 	+	16	0
 	+	17	21
 	+	8	11
-	+	34	11
-	+	28	0
-	+	24	21
-	+	28	0
-	+	38	20
-	+	38	13
-	+	38	11
-	+	38	3
-	+	38	21
-	+	38	18
-	+	38	22
-	+	38	19
-	+	38	12
-	+	38	46
-	+	38	27
-	+	38	11
-	+	38	0
-	+	38	0
-	+	38	0
+	+	36	11
+	+	30	0
+	+	25	21
+	+	30	0
+	+	40	20
+	+	40	13
+	+	40	11
+	+	40	3
+	+	40	21
+	+	40	18
+	+	40	22
+	+	40	19
+	+	40	12
+	+	40	46
+	+	40	27
+	+	40	11
+	+	40	0
+	+	40	0
+	+	40	0
 	+	19	20
 	+	19	0
 	+	11	0
 	+	10	0
 	+	19	0
-	+	24	15
-	+	25	25
-	+	27	0
-	+	26	27
+	+	25	15
+	+	26	25
+	+	30	0
+	+	27	27
+	+	23	16
+	+	37	23
+	+	23	13
+	+	30	0
+	+	24	30
+	+	28	49
+
+> ~/Documents/.bashrc
+	"	1	0
+
+> ~/.scripts/shell_greeting.sh
+	"	5	3
+	^	5	7
+	.	5	3
+	+	2	0
+	+	3	95
+	+	3	56
+	+	5	4
+	+	3	1
+	+	4	14
+	+	5	3
+
+> ~/Documents/Spring2016/Phil1000/Exam1/flashcards.csv
+	"	1	0
+	^	46	0
+	.	46	0
+	+	1	38
+	+	7	42
+	+	8	48
+	+	8	0
+	+	12	24
+	+	47	0
+	+	13	34
+	+	13	0
+	+	19	41
+	+	25	14
+	+	26	10
+	+	25	6
+	+	28	29
+	+	32	16
+	+	34	35
+	+	39	42
+	+	43	9
+	+	42	10
+	+	45	57
+	+	44	9
+	+	46	0
+
+> ~/Documents/Spring2016/Phil1000/Exam1/notes.md
+	"	164	0
+	^	164	0
+	.	65	0
+	+	104	64
+	+	109	12
+	+	116	9
+	+	115	14
+	+	127	51
+	+	127	55
+	+	145	0
+	+	145	0
+	+	136	59
+	+	145	0
+	+	139	42
+	+	145	8
+	+	143	0
+	+	144	65
+	+	145	39
+	+	149	37
+	+	151	10
+	+	154	71
+	+	165	0
+	+	165	0
+	+	164	0
+	+	162	18
+	+	143	6
+	+	113	26
+	+	65	0
+
+> /usr/share/vim/vim74/doc/spell.txt
+	"	18	0
 
 > ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_pipes.c
 	"	22	0
@@ -292,18 +516,6 @@ $
 	+	4	5
 	+	1	0
 	+	2	6
-
-> ~/.scripts/shell_greeting.sh
-	"	5	10
-	^	5	15
-	.	5	10
-	+	2	0
-	+	3	95
-	+	3	56
-	+	5	4
-	+	3	1
-	+	4	14
-	+	5	10
 
 > ~/Documents/Spring2016/Csci4401/csci4401-s16/code/C/shell_fork.c
 	"	4	0
@@ -457,80 +669,6 @@ $
 
 > ~/launchy.
 	"	1	0
-
-> ~/.i3status.conf
-	"	36	32
-	^	36	33
-	.	36	32
-	+	28	41
-	+	16	0
-	+	31	0
-	+	15	0
-	+	40	23
-	+	18	0
-	+	26	0
-	+	19	0
-	+	39	0
-	+	12	19
-	+	10	0
-	+	41	0
-	+	11	25
-	+	12	19
-	+	36	32
-	+	11	25
-	+	36	32
-
-> ~/.i3/config
-	"	211	11
-	.	211	11
-	+	29	8
-	+	30	10
-	+	31	10
-	+	32	11
-	+	44	34
-	+	107	17
-	+	110	25
-	+	122	49
-	+	107	3
-	+	177	0
-	+	176	0
-	+	173	28
-	+	174	33
-	+	175	32
-	+	173	28
-	+	174	33
-	+	175	0
-	+	173	0
-	+	107	24
-	+	108	28
-	+	109	19
-	+	110	19
-	+	111	19
-	+	112	19
-	+	113	19
-	+	114	19
-	+	115	19
-	+	116	27
-	+	108	14
-	+	109	14
-	+	110	14
-	+	111	14
-	+	112	14
-	+	113	14
-	+	114	14
-	+	115	14
-	+	208	57
-	+	108	28
-	+	190	52
-	+	116	30
-	+	107	28
-	+	182	19
-	+	209	0
-	+	206	70
-	+	210	14
-	+	211	11
-	+	212	0
-	+	211	11
 
 > ~/Documents/Spring2016/Csci4401/Notes/week1.md
 	"	1	0

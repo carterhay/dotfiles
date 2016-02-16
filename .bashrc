@@ -21,9 +21,11 @@ PATH=$PATH:~/.scripts
 #                 Alias                  #
 ##########################################
 alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
 alias ..='cd ..'
 alias pacman='sudo pacman'
 alias syu='sudo pacman -Syu'
+alias unosecure='sudo netctl stop-all > /dev/null && sudo netctl start unosecure & > /dev/null'
 
 
 
