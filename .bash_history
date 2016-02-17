@@ -1,125 +1,3 @@
-exit
-vim .bashrc
-vim .scripts/shell_greeting.sh 
-exit
-exit
-vim .scripts/shell_greeting.sh 
-vim .scripts/shell_greeting.sh 
-exit
-ls -la | grep .*
-ls -la
-git init
-git --help
-git remote add origin https://github.com/clccmh/dotfiles.git
-git add .*
-git add ./.*
-git status
-git add -h
-git add .
-git add */.*
-git status
-git add ./.*
-vim .gitignore
-git add .*
-ls -la
-vim .gitignore
-git add .*
-git add .
-git status
-vim .gitignore 
-git add -A
-git status
-git commit -m 'All .files'
-git push origin master
-git push origin master -f
-ls
-ls -la
-vim .gitignore 
-git add -A
-git status
-git add .scripts/
-ls
-git status
-git add .
-git status
-git commit -m 'trying to get scripts and other folders to push'
-git push origin master
-vim .gitignore 
-git status
-git add *
-git status
-git add -A
-clear
-vim .gitignore 
-git add -A
-git status
-git add .config
-exit
-ls --help
-vim .bashrc
-exit
-git status
-git add .i3
-git add .scripts
-git add .fonts
-git add .config
-git status
-cd .config/
-cd i3
-ls
-cd ..
-cd ..
-ls
-git rm .config/
-git rm .config/ -r
-ls -la
-git status
-git -r --cached .config/
-git -rm -r --cached .config/
-git rm -r --cached .config/
-git reset .config
-git status
-git add .icons
-ls -la .icons
-ls
-ls -la
-git status
-git commit -m 'added a few more folders'
-git push origin master
-ls
-vim .bashrc
-untar
-vim .bashrc
-exit
-cd Downloads/
-ls
-rm 'tor-browser-en (1).tar.gz' 
-ls
-untar tor-browser-en.tar.gz 
-ls
-cd tor-browser-en
-cd ..
-ls
-rm tor-browser-en
-rm -r tor-browser-en
-ls
-cd
-clear
-vim .bashrc
-exit
-alsamixer
-exit
-vim .Xresources 
-xset -b
-vim .Xresources 
-vim .xprofile
-exit
-cd Downloads/
-unzip tor-browser-en.tar.gz 
-ls
-vim ~/.bashrc
-exit
-cd Downloads/
 ls
 uncompress tor-browser-en.tar.gz 
 ls
@@ -497,4 +375,126 @@ vim java.vim
 ls
 rm html.vim 
 ls
+x
+vim .vimrc
+ls
+vim test.html
+vim test.html
+vim test.html
+vim test.html
+rm test.html
+vim test.html
+vim .vim/ftplugin/html.vim 
+vim test.html
+vim html.vim
+ls
+cd .vim/ftplugin/html.vim 
+cd .vim/ftplugin/
+vim html.vim
+vim test.html
+vim html.vim
+vim test.html
+vim test.html
+vim html.vim
+vim test.html
+vim test.html 
+rm test.html 
+vim html.vim 
+vim test.html
+ls
+vim html.vim 
+vim ~/.vimrc
+vim test.java
+ll
+vim java.vim
+ls
+cd
+git add -u
+git status
+git add .vim/**
+git status
+git commit -m 'organized vimrc a bit with ftplugin'
+git push origin master
+git push origin master
+git push origin master
+x
+cd /usr/bin/
+du
+du /
+du -h
+du --help
+du / -s
+sudo du / -s
+du -h
+cd
+du -h
+du -sh
+du -sh /
+du -sh /home/
+cd /
+cd mnt
+ls
+ll
+cd ..
+ls
+ll
+cd sys/
+..
+cd bin
+cd ..
+cd bin
+du -ah .
+du -ah
+du -ash
+du -sh
+..
+du -sh
+sudo du -sh
+cd
+cd Documents/Spring2016/Csci4401/
+ls
+cd Notes/
+newWeek
+vim week4.md
+vim week6.md
+vim week6.md 
+vim ~/.vimrc
+vim week6.md 
+vim week6.md 
+cd
+ls
+ll
+cd .vim
+ls
+mkdir after
+mv ftplugin/ after/
+ls
+cd
+cd Documents/Spring2016/Csci4401/Notes/week6.md 
+cd Documents/Spring2016/Csci4401/Notes/
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+vim week6.md 
+..
+..
+git add -A
+git commit -m 'took notes'
+git push origin master
+git push origin master
+x
+exit
+cd Documents/Spring2016/Csci4311/
+epdfview Computer\ Networks\ -\ A\ Tanenbaum\ -\ 5th\ edition.pdf  &
+x
+alsamixer
+x
+cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -C "clccmh@gmail.com"
+cat .ssh/id_rsa.pub
 x
