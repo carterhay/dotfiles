@@ -1,4 +1,4 @@
-let mapleader = "."
+let mapleader = ","
 
 set nocompatible
 set nocp
@@ -11,13 +11,30 @@ set laststatus=2
 "------------------------------------------------------
 "UI Setup
 "------------------------------------------------------
-colorscheme koehler
+colorscheme desert
 
+set colorcolumn=80
+
+set relativenumber
 set nu
 syntax on
 "set cursorline
 
+noremap <C-c> <esc>
+
 filetype plugin on
+
+"------------------------------------------------------
+"ctags
+"------------------------------------------------------
+set tags=./tags;/
+nnoremap <C-Enter> <C-w><C-]><C-w>T
+nnoremap <Leader>lt :set tags=./tags;/<CR>
+
+"------------------------------------------------------
+"vimgrep
+"------------------------------------------------------
+nnoremap <C-space> :vimgrep <cword> *<CR>:copen<CR><C-w>TgT<C-o>gt
 
 "------------------------------------------------------
 "Searching
