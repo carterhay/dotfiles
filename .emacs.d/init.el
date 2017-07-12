@@ -35,6 +35,10 @@
   ;; nnoremap ; :
   (define-key evil-motion-state-map (kbd ";") 'evil-ex))
 
+  (define-key evil-insert-state-map (kbd "C-c") [escape])
+  (define-key evil-replace-state-map (kbd "C-c") [escape])
+  (define-key evil-visual-state-map (kbd "C-c") [escape])
+
 (evil-mode 1)
 
 (use-package evil-tabs :ensure t)
