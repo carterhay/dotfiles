@@ -1,0 +1,29 @@
+
+xmonad.hs:1:1: error:
+    Failed to load interface for ‘XMonad’
+    Perhaps you meant DsMonad (needs flag -package-key ghc-8.0.2)
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:2:1: error:
+    Failed to load interface for ‘XMonad.Layout.Spacing’
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:3:1: error:
+    Failed to load interface for ‘XMonad.Hooks.ManageDocks’
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:4:1: error:
+    Failed to load interface for ‘XMonad.Util.Run’
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:5:1: error:
+    Failed to load interface for ‘XMonad.Util.EZConfig’
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:6:1: error:
+    Failed to load interface for ‘XMonad.Hooks.UrgencyHook’
+    Use -v to see a list of the files searched for.
+
+xmonad.hs:8:1: error:
+    Failed to load interface for ‘Graphics.X11.ExtraTypes.XF86’
+    Use -v to see a list of the files searched for.
