@@ -14,7 +14,7 @@ compinit
 setopt auto_cd
 
 PROMPT='%F{yellow}%m:%~>%f'
-EDITOR=/usr/bin/neovim
+PATH=$PATH:/home/carter/dotfiles/scripts
 
 alias "ls"="ls --color"
 alias "ll"="ls --color -lah"
