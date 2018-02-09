@@ -14,6 +14,7 @@ compinit
 setopt auto_cd
 
 PROMPT='%F{yellow}%m:%~>%f'
+EDITOR=/usr/bin/neovim
 
 alias "ls"="ls --color"
 alias "ll"="ls --color -lah"
