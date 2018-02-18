@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+if [ $1 ]; then
+  gpg -d $1 | tar xz
+else
+  echo "Missing argument. Usage: decrypt_and_extract [file]"
+fi
