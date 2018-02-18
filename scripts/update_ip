@@ -1,6 +1,0 @@
-#!/bin/bash
-wget http://icanhazip.com -O ips/acer
-cd ips
-git add -A
-git commit -m 'updated ip'
-git push origin master

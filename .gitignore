@@ -2,4 +2,4 @@
 .cache/
 !.*
 !.*/**
-.scripts/ips
+!.scripts
