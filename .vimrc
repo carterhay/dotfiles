@@ -1,6 +1,22 @@
+" Vundle
+"------------------------------------------------------
+set nocompatible
+filetype off
+set rtp+=~/dotfiles/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
+filetype plugin on
+set rtp+=~/dotfiles/.vim
+" Everything not-vundle after this line
+"------------------------------------------------------
+
 let mapleader = ","
 
-set nocompatible
 set nocp
 set backspace=2
 
@@ -11,18 +27,17 @@ set laststatus=2
 "------------------------------------------------------
 "UI Setup
 "------------------------------------------------------
-colorscheme desert
-
 set colorcolumn=80
-
 set relativenumber
 set nu
-syntax on
-"set cursorline
+syntax enable
+set background=dark
+colorscheme solarized
 
-noremap <C-c> <esc>
+inoremap <C-c> <esc>
+nnoremap <C-c> <esc>
+vnoremap <C-c> <esc>
 
-filetype plugin on
 
 "------------------------------------------------------
 "ctags
