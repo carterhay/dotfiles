@@ -14,7 +14,6 @@ compinit
 setopt auto_cd
 
 PROMPT='%F{yellow}%m:%~>%f'
-PATH=$PATH:/home/carter/dotfiles/scripts:/home/carter/.local/bin
 
 alias "ls"="ls --color"
 alias "ll"="ls --color -lah"
@@ -24,3 +23,8 @@ function chpwd() {
   emulate -L zsh
   ls
 }
+
+export TERM=xterm-256color
+export PATH=$PATH:/home/carter/dotfiles/scripts
+export EDITOR="vim"
+export VISUAL="$EDITOR"
