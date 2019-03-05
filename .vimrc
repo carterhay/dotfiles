@@ -8,6 +8,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin on
@@ -22,6 +23,8 @@ set backspace=2
 
 "This is for vim-airline to work
 set laststatus=2
+
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 
 "------------------------------------------------------
