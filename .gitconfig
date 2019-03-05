@@ -1,5 +1,7 @@
 [user]
-	email = chay@uno.edu
+	email = clccmh@gmail.com
 	name = Carter Hay
 [credential]
 	helper = cache
+[diff]
+  tool = vimdiff
