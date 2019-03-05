@@ -14,7 +14,7 @@ compinit
 setopt auto_cd
 
 PROMPT='%F{yellow}%m:%~>%f'
-PATH=$PATH:/home/carter/dotfiles/scripts
+PATH=$PATH:/home/carter/dotfiles/scripts:/home/carter/.local/bin
 
 alias "ls"="ls --color"
 alias "ll"="ls --color -lah"
