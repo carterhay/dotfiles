@@ -1,6 +1,2 @@
-*
-.cache/
-!.*
-!.*/**
-!.scripts
-!nvim
+
+nvim/plugins/*
